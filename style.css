@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 *{
     margin: 0;
@@ -22,8 +23,10 @@ nav p{
 nav p:hover{
     transform: scale(1.3);
 }
-nav div p{
+#date{
     font-size: 3vh;
+    color: #F50057;
+    font-family: 'Dela Gothic One', cursive;
 }
 .addtask{
     height: 80vh;
@@ -35,21 +38,53 @@ nav div p{
 .addtask input{
     margin-top: 10vh;
     height: 6vh;
-    width: 49vw;
+    width: 47vw;
     font-size: 3vh;
     font-weight: 700;
     padding-left: 1vw;
     padding-top: 1vh;
     background-color: #F2F2F2;
+    border: #F2F2F2;;
+    border-bottom: 2px solid grey;
+    opacity: 0.8;
+}
+.addtask input:focus{
+    outline: none;
+}
+.bar-btn{
+    display: flex;
+    align-items: end;
+}
+#btn{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
     border: none;
     border-bottom: 2px solid grey;
     opacity: 0.8;
+    transition: transform 0.2s;
+}
+#btn:hover{
+    transform: scale(1.08);
+    color: #F50057;
 }
 .box{
     height: 69vh;
     width: 50vw;
     opacity: 0.8;
+    overflow: scroll;
     background-color: #F2F2F2;
+}
+.box .three{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 4px;
+}
+.three p{
+    font-size: xx-large;
+    font-weight: 500;
 }
 footer{
     display: flex;
